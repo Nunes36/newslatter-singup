@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --fonte-principal: 'Reboto', Poppins;
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: var(--White);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile {
+    width: 375px;
+    margin: 0 auto;
+}
+
+
+.imagem_mobile {
+    width: 375px;
+    margin-bottom: 2em;
+}
+
+.desktop {
+    display: none;
+}
+
+article {
+    margin: auto;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    width: 300px;
+    margin: auto;
+}
+h1 {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.descricao {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 2em;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    display: flex; 
+    gap: .5em;
+    align-items: start;
+    width: 300px;
+    margin: auto;
+}
+
+.descricao_check {
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 2em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: auto;
+    width: 300px;
+}
+
+.mensagem {
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+}
+
+#mensagem_erro {
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    font-size: 8px;
+    color: red;
+}
+
+h2 {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+input {
+    padding: 13px;
+    border: solid 1px #cfcfcf ;
+    border-radius: 8px ;
+    width: 270px;
+}
+
+input::placeholder {
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    font-size: 11px;
+}
+
+button {
+    padding: 13px;
+    background-color: var(--Dark-Slate-Grey);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    width: 300px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--Tomato);
+}
+
+#subscribe {
+    font-family: var(--fonte-principal);
+    color: var(--White);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px ) {
+    body{
+        background-color: var(--Dark-Slate-Grey);
+    }
+
+    main {
+        background-color: var(--White);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 900px;
+        margin: auto;
+        border-radius: 10px;
+        padding: 10px;
+        gap: 3em;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 3em;
+    }
+
+}
+

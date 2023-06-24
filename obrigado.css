@@ -1,0 +1,59 @@
+@import url('/style.css');
+
+*{
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: var(--Dark-Slate-Grey);
+}
+
+.thanks {
+    background: #fff;
+    width: 450px;
+    height: 400px;
+    margin:  60px auto;
+    border-radius: 10px;
+}
+
+.vamos {
+    display: flex; 
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    gap: 1em;
+}
+
+.texto_agradecimento {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+.confirmação {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.mensagem {
+    padding: 13px;
+    background-color: var(--Dark-Slate-Grey);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.mensagem:hover {
+    background-color: var(--Tomato);
+}
+
+.demiss_mensagem {
+    font-family: var(--fonte-principal);
+    color: var(--White);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+
